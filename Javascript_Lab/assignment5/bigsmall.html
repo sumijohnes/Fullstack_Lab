@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var arr = new Array(1,2,55,66,33,22,1);
+		var largest = arr[0], smallest=arr[0];
+
+		for(i=0;i<arr.length;i++){
+
+			if(largest <= arr[i])
+				largest = arr[i];
+			if(smallest>=arr[i])
+				smallest = arr[i];
+		}
+
+		document.writeln("Largest: "+largest);
+		document.writeln("Smallest: "+smallest);
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

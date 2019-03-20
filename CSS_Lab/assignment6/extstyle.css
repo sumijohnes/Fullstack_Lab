@@ -1,0 +1,13 @@
+table, th, td {
+  border: 1px solid #FFFFCC;
+}
+th {
+	background-color: #FFB266;
+}
+
+.c1 {
+	background-color: green;
+}
+.c2 {
+	background-color: cyan;
+}
