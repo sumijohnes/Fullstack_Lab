@@ -6,9 +6,16 @@
 		var sent = "javascript is very easy to learn";
 
 		wordarr = sent.split(" ");
-		document.writeln(wordarr+"<br>");
-		document.writeln("After Sorting <br>");
-		document.writeln(wordarr.sort());
+
+		for(i=0;i<wordarr.length;i++){
+			document.writeln(wordarr[i]+"<br>");
+		}
+		
+		document.writeln("<strong> After Sorting </strong> <br>");
+		var wordarr1 = wordarr.sort();
+		for(i=0;i<wordarr1.length;i++){
+			document.writeln(wordarr1[i]+"<br>");
+		}
 	</script>
 </head>
 <body>

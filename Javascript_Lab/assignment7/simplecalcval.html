@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function addNum(){
+
+			if(!isFinite(document.frm1.txt1.value)){
+				alert("Please enter a number");
+				return false;
+			}
+		
+		document.frm1.txt3.value = (parseInt(document.frm1.txt1.value) + parseInt(document.frm1.txt2.value));
+	
+	}
+	function subNum(){
+		
+		document.frm1.txt3.value = (parseInt(document.frm1.txt1.value) - parseInt(document.frm1.txt2.value));
+	}
+	function mulNum(){
+		
+		document.frm1.txt3.value = (parseInt(document.frm1.txt1.value) * parseInt(document.frm1.txt2.value));
+	}
+	function divNum(){
+		
+		document.frm1.txt3.value = (parseInt(document.frm1.txt1.value) / parseInt(document.frm1.txt2.value));
+	}
+
+
+	</script>
+</head>
+<body>
+<form name="frm1">
+	Num1 <input type="text" name="txt1" value="" on> <br>
+	Num2 <input type="text" name="txt2" value=""> <br>
+	Result <input type="text" name="txt3" value=""> <br> <br>
+	
+	<input type="button" name="but1" value="Add" onclick="addNum()">
+	<input type="button" name="but1" value="Subtract" onclick="subNum()">
+	<input type="button" name="but1" value="Multiply" onclick="mulNum()">
+	<input type="button" name="but1" value="divide" onclick="divNum()">	
+</form>
+</body>
+</html>

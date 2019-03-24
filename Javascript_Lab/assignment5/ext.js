@@ -15,5 +15,5 @@ function getTheDate(){
 	date = d.getDate();
 	mon = d.getMonth()+1;
 	year=d.getFullYear();
-	alert("Date is: "+date+"-"+mon+"-"+year);
+	document.write("Date is: "+date+"-"+mon+"-"+year);
 	}

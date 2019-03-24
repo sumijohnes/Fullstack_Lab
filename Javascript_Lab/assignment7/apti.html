@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function verify(){
+			
+
+			if(document.f1.rad.value == 100.00)
+
+				document.getElementById('display').innerHTML = "Answer is Correct";
+			else
+				document.getElementById('display').innerHTML = "Wrong Answer";
+		}
+	</script>
+</head>
+<body>
+<form name="f1"> 
+	<h1> <strong> <font color="green">  Questions </font> </strong></h1> 
+	<p> <font color="red"> What is the Minimum balance for a Salary Account in Infy Bank? </font>  </p>
+
+	<input type="radio" name="rad" value="1000.00" checked=""> 1000.00 
+	<input type="radio" name="rad" value="0.00" checked=""> 0.00
+	<input type="radio" name="rad" value="100.00" checked=""> 100.00  
+	<input type="radio" name="rad" value="NOT ANSWERED" checked=""> NOT ANSWERED
+	<br> <br>
+
+	<input type="button" name="" value="submit" onclick="verify()">
+	<p> <span id='display'> </span></p>
+
+</form>
+</body>
+</html>

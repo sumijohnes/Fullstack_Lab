@@ -1,0 +1,28 @@
+body {
+	background-color: cyan;
+}
+
+
+.inputData {
+	background-color:#ffcc66;
+	text-align: left;
+	height: 140px;
+	width: 20%;
+	padding: 10px;
+    margin:auto;
+}
+
+
+.inputData input {
+	margin-left: 10em;
+	
+}
+
+.inputData label {
+	position: absolute;
+}
+h1,h3 {
+	color: red;
+
+}
+

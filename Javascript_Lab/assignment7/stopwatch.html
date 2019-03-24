@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		hours = 0;
+		minutes = 0;
+		seconds = 0;
+		function setCounter(){
+
+			seconds++;
+            if (seconds >= 60) {
+                  seconds = 0;
+                  minutes++;
+                    if (minutes >= 60) {
+                         minutes = 0;
+                         hours++;
+            }
+        }
+
+			//document.forms[0].txt1.value = hours + " : " + minutes +" : " + seconds;
+			document.forms[0].txt1.value  = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds)
+
+			startWatch();
+
+
+		}
+
+		function startWatch(){
+			//returns a identifier/handle of setTimeOut
+			id = setTimeout(setCounter,1000);
+		}
+
+		function stopTime(){
+			clearTimeout(id);
+		}
+
+	</script>
+</head>
+<body>
+	<h1> Stop Watch </h1>
+<form> 
+	<input type="text" name="txt1" value=""> <br><br>
+	<input type="button" name="start" value="Start" onclick="startWatch()">
+	<input type="button" name="stop" value="Stop" onclick="stopTime()">
+</form>
+</body>
+</html>

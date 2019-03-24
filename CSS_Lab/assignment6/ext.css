@@ -1,0 +1,30 @@
+
+
+.inputData {
+	border: 3px dotted red;
+	height: 150px;
+	width: 25%;
+	padding: 40px;
+    margin:auto;
+
+}
+
+
+.inputData input,select {
+	margin-left: 14em;
+	color: red;
+	
+}
+
+.inputData label {
+	position: absolute;
+	color: blue;
+	font-weight: bold;
+
+}
+h1,h3 {
+	color: brown;
+	text-align: center;
+
+}
+
